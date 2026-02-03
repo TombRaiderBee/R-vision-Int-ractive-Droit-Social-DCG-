@@ -1,0 +1,21 @@
+/* Masque les éléments d'UI CodeSandbox les plus courants en preview intégré */
+a[title="Bac à sable ouvert"],
+button[aria-label="Fork Sandbox"],
+div[class*="toolbar"],
+div[class*="PreviewActions"],
+div[class*="Watermark"],
+div[class*="StatusBar"],
+div[data-testid="status-bar"],
+button[data-testid="open-editor-button"],
+div[aria-label="Open Sandbox"] {
+  display: none !important;
+}
+
+/* Positionnements connus (en bas à droite) */
+div[class*="preview"] > div[style*="position: fixed"],
+div[style*="position: fixed"][style*="right"][style*="bottom"] {
+  z-index: -1 !important;
+  display: none !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
