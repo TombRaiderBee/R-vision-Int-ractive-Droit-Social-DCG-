@@ -1,5 +1,5 @@
 {
-  "name": "revision interactive droit social",
+  "name": "revision-interactive-droit-social",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -20,4 +20,3 @@
     "@vitejs/plugin-react": "^4.0.0"
   }
 }
-``
